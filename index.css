@@ -1,0 +1,29 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Quicksand:wght@300&family=Raleway:wght@100&family=Source+Sans+Pro:wght@200;300;400;600&family=Work+Sans:wght@200;300;400;500&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #060a1f;
+    gap: 10rem;
+}
+
+.timer {
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.minute-clock span, .second-clock span{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.button__container button {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in;
+}
+
+.button__container button:hover {
+    transform: scale(1.1);
+}

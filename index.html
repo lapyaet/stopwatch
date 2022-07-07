@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./config.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="timer flex gap-1.5">
+      <div class="minute-clock">
+        <span class="relative w-28 h-24 flex justify-center items-center text-4xl text-white font-normal bg-blue-600" id="countMin">
+          00
+        </span>
+        <p class="relative w-28 h-8 flex justify-center items-center text-xl text-white font-medium bg-blue-800">
+          MINUTE
+        </p>
+      </div>
+      <div class="second-clock">
+        <span class="relative w-28 h-24 flex justify-center items-center text-4xl text-white font-normal bg-rose-600" id="countSec">00</span>
+        <p class="relative w-28 h-8 flex justify-center items-center text-xl text-white font-medium bg-rose-800">
+          SECOND
+        </p>
+      </div>
+    </div>
+    <div class="flex gap-40 button__container">
+      <button class="text-white text-sm bg-blue-600 py-2.5 px-8 rounded-3xl"
+      type="button" 
+      onclick="countingStart()">
+        Start
+      </button>
+      <button  class="text-white text-sm bg-rose-600 py-2.5 px-8 rounded-3xl"
+      type="button" 
+      onclick="countingStop()">
+        Stop
+      </button>
+      <audio
+      controls
+      src="./win game level 350.wav" id="audioTimer">
+          Your browser does not support the
+          <code>audio</code> element.
+  </audio>
+    </div>
+   
+    <script src="./index.js"></script>
+  </body>
+</html>
