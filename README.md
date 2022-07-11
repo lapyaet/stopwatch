@@ -10,7 +10,7 @@
 
 ## Documentation
 If you clik Stopwatch App, you can see this app 
-[Stopwatch App](https://lapyae.me/timer/)
+[Stopwatch App](https://lapyae.me/stopwatch/)
 
 
 ## 🛠 Skills
